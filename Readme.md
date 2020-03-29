@@ -5,7 +5,7 @@ _Helps people talk to you in your absence_
 At times you are the only person who knows answer to certain specific things. Maybe because of your profession or
 it is a problem you faced, and now each time it rears its head again you would be needed. If you consider these situations
 as distractions to something more important at hand, this project is supposed to help. Personally speaking, sometimes
-I forget replying to people, because by the time I am free they are asleep or unavailable (majorly close family members). 
+I forget replying to people because by the time I am free they are asleep or unavailable (majorly close family members). 
 At work there are questions that float around like: 
 
 1. What's the wifi password?
@@ -14,7 +14,7 @@ At work there are questions that float around like:
 4. _this_ thing stopped working how do we make it work again?
 5. What are the numbers of that _project_?
 
-This project lets you create a snapshot of such knowledge. It also allows someone access it naturally (more work needed here).
+This project lets you create snapshots of such information. It also allows someone access it naturally (more work needed here).
 More details on how it works [later](#working). Clearing the distraction. Kind of like having a proxy for yourself doing 
 all the boring things for you.
 
@@ -26,8 +26,6 @@ procurator /ˈprɒkjʊreɪtə/
 noun: procurator; plural noun: procurators
 Law: an agent representing others in a court of law in countries retaining Roman civil law.
         (in Scotland) a lawyer practising before the lower courts.
-        
-But why? because origin of the word **proxy** takes us to a word **procuracy**.
 
 ![word-usage](https://www.gstatic.com/onebox/dictionary/etymology/en/desktop/adc8de134fe7081488d1ecb22f470da58eba3003a0838886073e0882f54caf09.png)
 
@@ -51,17 +49,24 @@ Python: 3.6.5
 6. In the psql cli Run the following:
     ```sql
     CREATE DATABASE procurator;
-    CREATE USER procurator WITH PASSWORD 'procurator';
-    ALTER ROLE procurator SET client_encoding to 'utf-8';
-    ALTER ROLE procurator SET timezone to 'UTC';
-    GRANT ALL PRIVILEGES ON DATABASE procurator TO procurator;
+    CREATE USER <user> WITH PASSWORD '<safepassword>';
+    ALTER ROLE <user> SET client_encoding to 'utf-8';
+    ALTER ROLE <user> SET timezone to 'UTC';
+    GRANT ALL PRIVILEGES ON DATABASE procurator TO <user>;
     ```
 5. Pull kaldi-serve's docker image. - Optional
     ```
     docker pull vernacularai/kaldi-serve:master
     ```   
 6. Start the kaldi-serve container. - Optional
-7. Run `poetry run proxy-init` to setup the database with the right roles, and seed data.
+7. To setup the database with the right roles, and seed data, run:
+     ```
+     poetry run proxy-init --host=<host> --port=<port> --user=<user> --password=<password> --dbname=procurator
+     
+     # port should be same as the args supplied to the docker container.
+     # user, password should be <user>, <password> from step 6
+     # If you named your database differently, use that against the argument for --dbname
+     ```
 8. Run the cli by using:
     ```
     poetry run proxy-bot --dev
@@ -80,6 +85,8 @@ Once everything is setup, and `proxy-bot` command is invoked.
 An example:
 
 ![working](./assets/working.png)
+
+When this project is completely ready, 
 
 
 ## Future works
