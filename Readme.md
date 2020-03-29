@@ -1,5 +1,7 @@
 # Procurator
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cde256097f2348f39f9a2488bb2ab3dd)](https://www.codacy.com/manual/AmreshVenugopal/procurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ltbringer/procurator&amp;utm_campaign=Badge_Grade)
+
 _Helps people talk to you in your absence_
 
 At times you are the only person who knows answer to certain specific things. Maybe because of your profession or
