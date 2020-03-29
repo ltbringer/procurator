@@ -1,0 +1,157 @@
+[[package]]
+category = "main"
+description = "Beautiful Python prompts made simple."
+name = "bullet"
+optional = false
+python-versions = "*"
+version = "2.1.0"
+
+[[package]]
+category = "main"
+description = "Pythonic argument parser, that will make you smile"
+name = "docopt"
+optional = false
+python-versions = "*"
+version = "0.6.2"
+
+[[package]]
+category = "main"
+description = "HTTP/2-based RPC framework"
+name = "grpcio"
+optional = false
+python-versions = "*"
+version = "1.27.2"
+
+[package.dependencies]
+six = ">=1.5.2"
+
+[[package]]
+category = "main"
+description = "Protobuf code generator for gRPC"
+name = "grpcio-tools"
+optional = false
+python-versions = "*"
+version = "1.27.2"
+
+[package.dependencies]
+grpcio = ">=1.27.2"
+protobuf = ">=3.5.0.post1"
+
+[[package]]
+category = "main"
+description = "a library for doing approximate and phonetic matching of strings."
+name = "jellyfish"
+optional = false
+python-versions = ">3.4"
+version = "0.7.2"
+
+[[package]]
+category = "main"
+description = "Python bindings for kaldi streaming ASR"
+name = "kaldi-serve"
+optional = false
+python-versions = ">=3.6,<4.0"
+version = "0.3.0"
+
+[package.dependencies]
+docopt = ">=0.6.2,<0.7.0"
+grpcio = ">=1.22,<2.0"
+grpcio-tools = ">=1.22,<2.0"
+pyaudio = ">=0.2.11,<0.3.0"
+pydub = ">=0.23.1,<0.24.0"
+
+[package.source]
+reference = "cheeseshop"
+type = "legacy"
+url = "https://cheeseshop.vernacular.ai"
+
+[[package]]
+category = "main"
+description = "Library for building powerful interactive command lines in Python"
+name = "prompt-toolkit"
+optional = false
+python-versions = ">=3.6"
+version = "3.0.3"
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
+category = "main"
+description = "Protocol Buffers"
+name = "protobuf"
+optional = false
+python-versions = "*"
+version = "3.11.3"
+
+[package.dependencies]
+setuptools = "*"
+six = ">=1.9"
+
+[[package]]
+category = "main"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+name = "psycopg2"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "2.8.4"
+
+[[package]]
+category = "main"
+description = "Bindings for PortAudio v19, the cross-platform audio input/output stream library."
+name = "pyaudio"
+optional = false
+python-versions = "*"
+version = "0.2.11"
+
+[[package]]
+category = "main"
+description = "Manipulate audio with an simple and easy high level interface"
+name = "pydub"
+optional = false
+python-versions = "*"
+version = "0.23.1"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.14.0"
+
+[[package]]
+category = "main"
+description = "Measures number of Terminal column cells of wide-character codes"
+name = "wcwidth"
+optional = false
+python-versions = "*"
+version = "0.1.9"
+
+[[package]]
+category = "main"
+description = "Yet Another Terminal Spinner"
+name = "yaspin"
+optional = false
+python-versions = "*"
+version = "0.16.0"
+
+[metadata]
+content-hash = "e06a81b6ce14f4774bdb4faa6f334940588ad77a772cb29e5c452a021f20dcd4"
+python-versions = "^3.6"
+
+[metadata.hashes]
+bullet = ["7fc493c1c375a735a7cdb0bd9d6538336ba3085ef1426823a1cd43bebcdfe856", "ee38418aab6ad282bfc3594b8afa2594c012927641f7b2100e18b448c4cb3f1b"]
+docopt = ["49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"]
+grpcio = ["02aef8ef1a5ac5f0836b543e462eb421df6048a7974211a906148053b8055ea6", "07f82aefb4a56c7e1e52b78afb77d446847d27120a838a1a0489260182096045", "1cff47297ee614e7ef66243dc34a776883ab6da9ca129ea114a802c5e58af5c1", "1ec8fc865d8da6d0713e2092a27eee344cd54628b2c2065a0e77fff94df4ae00", "1ef949b15a1f5f30651532a9b54edf3bd7c0b699a10931505fa2c80b2d395942", "209927e65395feb449783943d62a3036982f871d7f4045fadb90b2d82b153ea8", "25c77692ea8c0929d4ad400ea9c3dcbcc4936cee84e437e0ef80da58fa73d88a", "28f27c64dd699b8b10f70da5f9320c1cffcaefca7dd76275b44571bd097f276c", "355bd7d7ce5ff2917d217f0e8ddac568cb7403e1ce1639b35a924db7d13a39b6", "4a0a33ada3f6f94f855f92460896ef08c798dcc5f17d9364d1735c5adc9d7e4a", "4d3b6e66f32528bf43ca2297caca768280a8e068820b1c3dca0fcf9f03c7d6f1", "5121fa96c79fc0ec81825091d0be5c16865f834f41b31da40b08ee60552f9961", "57949756a3ce1f096fa2b00f812755f5ab2effeccedb19feeb7d0deafa3d1de7", "586d931736912865c9790c60ca2db29e8dc4eace160d5a79fec3e58df79a9386", "5ae532b93cf9ce5a2a549b74a2c35e3b690b171ece9358519b3039c7b84c887e", "5dab393ab96b2ce4012823b2f2ed4ee907150424d2f02b97bd6f8dd8f17cc866", "5ebc13451246de82f130e8ee7e723e8d7ae1827f14b7b0218867667b1b12c88d", "68a149a0482d0bc697aac702ec6efb9d380e0afebf9484db5b7e634146528371", "6db7ded10b82592c472eeeba34b9f12d7b0ab1e2dcad12f081b08ebdea78d7d6", "6e545908bcc2ae28e5b190ce3170f92d0438cf26a82b269611390114de0106eb", "6f328a3faaf81a2546a3022b3dfc137cc6d50d81082dbc0c94d1678943f05df3", "706e2dea3de33b0d8884c4d35ecd5911b4ff04d0697c4138096666ce983671a6", "80c3d1ce8820dd819d1c9d6b63b6f445148480a831173b572a9174a55e7abd47", "8111b61eee12d7af5c58f82f2c97c2664677a05df9225ef5cbc2f25398c8c454", "9713578f187fb1c4d00ac554fe1edcc6b3ddd62f5d4eb578b81261115802df8e", "9c0669ba9aebad540fb05a33beb7e659ea6e5ca35833fc5229c20f057db760e8", "9e9cfe55dc7ac2aa47e0fd3285ff829685f96803197042c9d2f0fb44e4b39b2c", "a22daaf30037b8e59d6968c76fe0f7ff062c976c7a026e92fbefc4c4bf3fc5a4", "a25b84e10018875a0f294a7649d07c43e8bc3e6a821714e39e5cd607a36386d7", "a71138366d57901597bfcc52af7f076ab61c046f409c7b429011cd68de8f9fe6", "b4efde5524579a9ce0459ca35a57a48ca878a4973514b8bb88cb80d7c9d34c85", "b78af4d42985ab3143d9882d0006f48d12f1bc4ba88e78f23762777c3ee64571", "bb2987eb3af9bcf46019be39b82c120c3d35639a95bc4ee2d08f36ecdf469345", "c03ce53690fe492845e14f4ab7e67d5a429a06db99b226b5c7caa23081c1e2bb", "c59b9280284b791377b3524c8e39ca7b74ae2881ba1a6c51b36f4f1bb94cee49", "d18b4c8cacbb141979bb44355ee5813dd4d307e9d79b3a36d66eca7e0a203df8", "d1e5563e3b7f844dbc48d709c9e4a75647e11d0387cc1fa0c861d3e9d34bc844", "d22c897b65b1408509099f1c3334bd3704f5e4eb7c0486c57d0e212f71cb8f54", "dbec0a3a154dbf2eb85b38abaddf24964fa1c059ee0a4ad55d6f39211b1a4bca", "ed123037896a8db6709b8ad5acc0ed435453726ea0b63361d12de369624c2ab5", "f3614dabd2cc8741850597b418bcf644d4f60e73615906c3acc407b78ff720b3", "f9d632ce9fd485119c968ec6a7a343de698c5e014d17602ae2f110f1b05925ed", "fb62996c61eeff56b59ab8abfcaa0859ec2223392c03d6085048b576b567459b"]
+grpcio-tools = ["00c5080cfb197ed20ecf0d0ff2d07f1fc9c42c724cad21c40ff2d048de5712b1", "069826dd02ce1886444cf4519c4fe1b05ac9ef41491f26e97400640531db47f6", "1266b577abe7c720fd16a83d0a4999a192e87c4a98fc9f97e0b99b106b3e155f", "16dc3fad04fe18d50777c56af7b2d9b9984cd1cfc71184646eb431196d1645c6", "1de5a273eaffeb3d126a63345e9e848ea7db740762f700eb8b5d84c5e3e7687d", "2ca280af2cae1a014a238057bd3c0a254527569a6a9169a01c07f0590081d530", "43a1573400527a23e4174d88604fde7a9d9a69bf9473c21936b7f409858f8ebb", "4698c6b6a57f73b14d91a542c69ff33a2da8729691b7060a5d7f6383624d045e", "520b7dafddd0f82cb7e4f6e9c6ba1049aa804d0e207870def9fe7f94d1e14090", "57f8b9e2c7f55cd45f6dd930d6de61deb42d3eb7f9788137fbc7155cf724132a", "59fbeb5bb9a7b94eb61642ac2cee1db5233b8094ca76fc56d4e0c6c20b5dd85f", "5fd7efc2fd3370bd2c72dc58f31a407a5dff5498befa145da211b2e8c6a52c63", "6016c07d6566e3109a3c032cf3861902d66501ecc08a5a84c47e43027302f367", "627c91923df75091d8c4d244af38d5ab7ed8d786d480751d6c2b9267fbb92fe0", "69c4a63919b9007e845d9f8980becd2f89d808a4a431ca32b9723ee37b521cb1", "77e25c241e33b75612f2aa62985f746c6f6803ec4e452da508bb7f8d90a69db4", "7a2d5fb558ac153a326e742ebfd7020eb781c43d3ffd920abd42b2e6c6fdfb37", "7b54b283ec83190680903a9037376dc915e1f03852a2d574ba4d981b7a1fd3d0", "845a51305af9fc7f9e2078edaec9a759153195f6cf1fbb12b1fa6f077e56b260", "84724458c86ff9b14c29b49e321f34d80445b379f4cd4d0494c694b49b1d6f88", "87e8ca2c2d2d3e09b2a2bed5d740d7b3e64028dafb7d6be543b77eec85590736", "8e7738a4b93842bca1158cde81a3587c9b7111823e40a1ddf73292ca9d58e08b", "915a695bc112517af48126ee0ecdb6aff05ed33f3eeef28f0d076f1f6b52ef5e", "99961156a36aae4a402d6b14c1e7efde642794b3ddbf32c51db0cb3a199e8b11", "9ba88c2d99bcaf7b9cb720925e3290d73b2367d238c5779363fd5598b2dc98c7", "a140bf853edb2b5e8692fe94869e3e34077d7599170c113d07a58286c604f4fe", "a14dc7a36c845991d908a7179502ca47bcba5ae1817c4426ce68cf2c97b20ad9", "a3d2aec4b09c8e59fee8b0d1ed668d09e8c48b738f03f5d8401d7eb409111c47", "a8f892378b0b02526635b806f59141abbb429d19bec56e869e04f396502c9651", "aaa5ae26883c3d58d1a4323981f96b941fa09bb8f0f368d97c6225585280cf04", "b56caecc16307b088a431a4038c3b3bb7d0e7f9988cbd0e9fa04ac937455ea38", "bd7f59ff1252a3db8a143b13ea1c1e93d4b8cf4b852eb48b22ef1e6942f62a84", "c1bb8f47d58e9f7c4825abfe01e6b85eda53c8b31d2267ca4cddf3c4d0829b80", "d1a5e5fa47ba9557a7d3b31605631805adc66cdba9d95b5d10dfc52cca1fed53", "dcbc06556f3713a9348c4fce02d05d91e678fc320fb2bcf0ddf8e4bb11d17867", "e17b2e0936b04ced99769e26111e1e86ba81619d1b2691b1364f795e45560953", "e6932518db389ede8bf06b4119bbd3e17f42d4626e72dec2b8955b20ec732cb6", "ea4b3ad696d976d5eac74ec8df9a2c692113e455446ee38d5b3bd87f8e034fa6", "ee50b0cf0d28748ef9f941894eb50fc464bd61b8e96aaf80c5056bea9b80d580", "ef624b6134aef737b3daa4fb7e806cb8c5749efecd0b1fa9ce4f7e060c7a0221", "f5450aa904e720f9c6407b59e96a8951ed6a95463f49444b6d2594b067d39588", "f8514453411d72cc3cf7d481f2b6057e5b7436736d0cd39ee2b2f72088bbf497", "fae91f30dc050a8d0b32d20dc700e6092f0bd2138d83e9570fff3f0372c1b27e"]
+jellyfish = ["cb09c50d7e2bb7b926fc7654762bc81f9c629e0c92ae7137bf22b34f39515286"]
+kaldi-serve = []
+prompt-toolkit = ["a402e9bf468b63314e37460b68ba68243d55b2f8c4d0192f85a019af3945050e", "c93e53af97f630f12f5f62a3274e79527936ed466f038953dfa379d4941f651a"]
+protobuf = ["0bae429443cc4748be2aadfdaf9633297cfaeb24a9a02d0ab15849175ce90fab", "24e3b6ad259544d717902777b33966a1a069208c885576254c112663e6a5bb0f", "2affcaba328c4662f3bc3c0e9576ea107906b2c2b6422344cdad961734ff6b93", "310a7aca6e7f257510d0c750364774034272538d51796ca31d42c3925d12a52a", "52e586072612c1eec18e1174f8e3bb19d08f075fc2e3f91d3b16c919078469d0", "73152776dc75f335c476d11d52ec6f0f6925774802cd48d6189f4d5d7fe753f4", "7774bbbaac81d3ba86de646c39f154afc8156717972bf0450c9dbfa1dc8dbea2", "82d7ac987715d8d1eb4068bf997f3053468e0ce0287e2729c30601feb6602fee", "8eb9c93798b904f141d9de36a0ba9f9b73cc382869e67c9e642c0aba53b0fc07", "adf0e4d57b33881d0c63bb11e7f9038f98ee0c3e334c221f0858f826e8fb0151", "c40973a0aee65422d8cb4e7d7cbded95dfeee0199caab54d5ab25b63bce8135a", "c77c974d1dadf246d789f6dad1c24426137c9091e930dbf50e0a29c1fcf00b1f", "dd9aa4401c36785ea1b6fff0552c674bdd1b641319cb07ed1fe2392388e9b0d7", "e11df1ac6905e81b815ab6fd518e79be0a58b5dc427a2cf7208980f30694b956", "e2f8a75261c26b2f5f3442b0525d50fd79a71aeca04b5ec270fc123536188306", "e512b7f3a4dd780f59f1bf22c302740e27b10b5c97e858a6061772668cd6f961", "ef2c2e56aaf9ee914d3dccc3408d42661aaf7d9bb78eaa8f17b2e6282f214481", "fac513a9dc2a74b99abd2e17109b53945e364649ca03d9f7a0b96aa8d1807d0a", "fdfb6ad138dbbf92b5dbea3576d7c8ba7463173f7d2cb0ca1bd336ec88ddbd80"]
+psycopg2 = ["4212ca404c4445dc5746c0d68db27d2cbfb87b523fe233dc84ecd24062e35677", "47fc642bf6f427805daf52d6e52619fe0637648fe27017062d898f3bf891419d", "72772181d9bad1fa349792a1e7384dde56742c14af2b9986013eb94a240f005b", "8396be6e5ff844282d4d49b81631772f80dabae5658d432202faf101f5283b7c", "893c11064b347b24ecdd277a094413e1954f8a4e8cdaf7ffbe7ca3db87c103f0", "92a07dfd4d7c325dd177548c4134052d4842222833576c8391aab6f74038fc3f", "965c4c93e33e6984d8031f74e51227bd755376a9df6993774fd5b6fb3288b1f4", "9ab75e0b2820880ae24b7136c4d230383e07db014456a476d096591172569c38", "b0845e3bdd4aa18dc2f9b6fb78fbd3d9d371ad167fd6d1b7ad01c0a6cdad4fc6", "dca2d7203f0dfce8ea4b3efd668f8ea65cd2b35112638e488a4c12594015f67b", "ed686e5926929887e2c7ae0a700e32c6129abb798b4ad2b846e933de21508151", "ef6df7e14698e79c59c7ee7cf94cd62e5b869db369ed4b1b8f7b729ea825712a", "f898e5cc0a662a9e12bde6f931263a1bbd350cfb18e1d5336a12927851825bb6"]
+pyaudio = ["0d92f6a294565260a282f7c9a0b0d309fc8cc988b5ee5b50645634ab9e2da7f7", "259bb9c1363be895b4f9a97e320a6017dd06bc540728c1a04eb4a7b6fe75035b", "2a19bdb8ec1445b4f3e4b7b109e0e4cec1fd1f1ce588592aeb6db0b58d4fb3b0", "51b558d1b28c68437b53218279110db44f69f3f5dd3d81859f569a4a96962bdc", "589bfad2c615dd4b5d3757e763019c42ab82f06fba5cae64ec02fd7f5ae407ed", "8f89075b4844ea94dde0c951c2937581c989fabd4df09bfd3f075035f50955df", "93bfde30e0b64e63a46f2fd77e85c41fd51182a4a3413d9edfaf9ffaa26efb74", "cf1543ba50bd44ac0d0ab5c035bb9c3127eb76047ff12235149d9adf86f532b6", "f78d543a98b730e64621ebf7f3e2868a79ade0a373882ef51c0293455ffa8e6e"]
+pydub = ["c362fa02da1eebd1d08bd47aa9b0102582dff7ca2269dbe9e043d228a0c1ea93", "d29901a486fb421c5d7b0f3d5d3a60527179204d8ffb20e74e1ae81c17e81b46"]
+six = ["236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a", "8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"]
+wcwidth = ["cafe2186b3c009a04067022ce1dcd79cb38d8d65ee4f4791b8888d6599d1bbe1", "ee73862862a156bf77ff92b09034fc4825dd3af9cf81bc5b360668d425f3c5f1"]
+yaspin = ["e88bf9c9fe4ac588e3620588aadae655dfc20f1f7460338394ef4693bdc2b800", "efca3eb7162e575d3ab2e49743cd9bd1f5ec2adc7d85b9489ab145a3f6460ed4"]
