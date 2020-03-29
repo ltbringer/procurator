@@ -86,15 +86,17 @@ An example:
 
 ![working](./assets/working.png)
 
-When this project is completely ready, 
+When this project is completely ready, an interface would allow a user to submit question answer pairs.
+This project will only be as useful as the distractions it avoids, the more frequently asked and the less frequently changing
+question-answer pairs are the target of this project.
 
 
 ## Future works
-1. I had planned to build this project using Scala and Akka. So I hope for a cross-platform rewrite.
-2. This project uses [jellyfish](https://github.com/jamesturk/jellyfish) to find the best answer to a question, more improvements can be made here.
-3. There needs to be more restriction on user's that could be seen at a time (currently all the users are queried). I plan for region->org->team->person kind of hierarchy,
+- [ ] I had planned to build this project using Scala and Akka. So I hope for a rewrite.
+- [ ] This project uses [jellyfish](https://github.com/jamesturk/jellyfish) to find the best answer to a question, more improvements can be made here.
+- [ ] There needs to be more restriction on user's that could be seen at a time (currently all the users are queried). I plan for region->org->team->person kind of hierarchy,
    default behaviour would be to show the members of the same team or org.
-4. `kaldi-serve` is no good without a model, finding or publishing a pre-trained model could help this project.
-5. Keeping the transcription engine itself flexible to choices, people should be able to use any transcription service.
-7. Currently all questions submitted by a `user` are loaded into the memory. Akka streams should help reduce this burden.
-8. A friendly interface for people who don't code. I have plans for an electron app.
+- [ ] `kaldi-serve` is no good without a model, finding or publishing a pre-trained model could help this project.
+- [ ] Keeping the transcription engine itself flexible to choices, people should be able to use any transcription service.
+- [ ] Currently all questions submitted by a `user` are loaded into the memory. Akka streams should help reduce this burden.
+- [ ] A friendly interface for people who don't code. I have plans for an electron app.
