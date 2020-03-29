@@ -14,28 +14,31 @@ At work there are questions that float around like:
 4. _this_ thing stopped working how do we make it work again?
 5. What are the numbers of that _project_?
 
-This project lets you create snapshots of such information. It also allows someone access it naturally (more work needed here).
+This project lets you create snapshots of such information. It also allows someone to access it naturally (more work needed here).
 More details on how it works [later](#working). Clearing the distraction. Kind of like having a proxy for yourself doing 
 all the boring things for you.
 
 Some of these questions are a good fit for this project. Answers that don't change frequently, are easy to maintain.
 Like the first 2 questions are not going to change on a daily/weekly/monthly basis.
 
-## Naming
+## Name
 procurator /ˈprɒkjʊreɪtə/
+
 noun: procurator; plural noun: procurators
+
 Law: an agent representing others in a court of law in countries retaining Roman civil law.
         (in Scotland) a lawyer practising before the lower courts.
 
 ![word-usage](https://www.gstatic.com/onebox/dictionary/etymology/en/desktop/adc8de134fe7081488d1ecb22f470da58eba3003a0838886073e0882f54caf09.png)
 
 ## Project
-This project was created as a part of a 1-day Hackathon. Support for different platforms, installation, optimization took a backseat
-for the sake of prototype read about [future works](#future-works).
+This project was created as a part of a 1-day voice-themed Hackathon at [vernacular.ai](https://github.com/Vernacular-ai). 
+Support for different platforms, installation, optimization took a backseat for the sake of prototype. 
+Read about [future plans](#future-works).
 
-Current Support:
-Built over: Ubuntu 18.04
-Python: 3.6.5
+### Current Support:
+- Built over: Ubuntu 18.04
+- Python: 3.6.5
 
 ### Installation
 1. Clone this project.
@@ -94,7 +97,7 @@ question-answer pairs are the target of this project.
 ## Future works
 - [ ] I had planned to build this project using Scala and Akka. So I hope for a rewrite.
 - [ ] This project uses [jellyfish](https://github.com/jamesturk/jellyfish) to find the best answer to a question, more improvements can be made here.
-- [ ] There needs to be more restriction on user's that could be seen at a time (currently all the users are queried). I plan for region->org->team->person kind of hierarchy,
+- [ ] There needs to be more restriction on users that could be seen at a time (currently all the users are queried). I plan for region->org->team->person kind of hierarchy,
    default behaviour would be to show the members of the same team or org.
 - [ ] `kaldi-serve` is no good without a model, finding or publishing a pre-trained model could help this project.
 - [ ] Keeping the transcription engine itself flexible to choices, people should be able to use any transcription service.
