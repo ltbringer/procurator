@@ -28,6 +28,7 @@ Law: an agent representing others in a court of law in countries retaining Roman
         (in Scotland) a lawyer practising before the lower courts.
         
 But why? because origin of the word **proxy** takes us to a word **procuracy**.
+
 ![word-usage](https://www.gstatic.com/onebox/dictionary/etymology/en/desktop/adc8de134fe7081488d1ecb22f470da58eba3003a0838886073e0882f54caf09.png)
 
 ## Project
@@ -77,6 +78,7 @@ Once everything is setup, and `proxy-bot` command is invoked.
 3. Your query will be matched against the submissions made by the selected user and the best is returned.
 
 An example:
+
 ![working](./assets/working.png)
 
 
