@@ -4,7 +4,7 @@
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![Last commit](https://img.shields.io/github/last-commit/ltbringer/procurator)
 
-_Helps people talk to you in your absence_
+Helps people talk to you in your absence.
 
 At times you are the only person who knows answer to certain specific things. Maybe because of your profession or
 it is a problem you faced, and now each time it rears its head again you would be needed. If you consider these situations
