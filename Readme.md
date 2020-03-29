@@ -15,8 +15,7 @@ At work there are questions that float around like:
 5. What are the numbers of that _project_?
 
 This project lets you create snapshots of such information. It also allows someone to access it naturally (more work needed here).
-More details on how it works [later](#working). Clearing the distraction. Kind of like having a proxy for yourself doing 
-all the boring things for you.
+Clearing the distraction. Kind of like having a proxy for yourself doing all the boring things for you. More details on how it works [later](#working). 
 
 Some of these questions are a good fit for this project. Answers that don't change frequently, are easy to maintain.
 Like the first 2 questions are not going to change on a daily/weekly/monthly basis.
@@ -36,8 +35,8 @@ This project was created as a part of a 1-day voice-themed Hackathon at [vernacu
 Support for different platforms, installation, optimization took a backseat for the sake of prototype. 
 Read about [future plans](#future-works).
 
-### Current Support:
-- Built over: Ubuntu 18.04
+#### Current Support:
+- Ubuntu 18.04
 - Python: 3.6.5
 
 ### Installation
@@ -102,4 +101,4 @@ question-answer pairs are the target of this project.
 - [ ] `kaldi-serve` is no good without a model, finding or publishing a pre-trained model could help this project.
 - [ ] Keeping the transcription engine itself flexible to choices, people should be able to use any transcription service.
 - [ ] Currently all questions submitted by a `user` are loaded into the memory. Akka streams should help reduce this burden.
-- [ ] A friendly interface for people who don't code. I have plans for an electron app.
+- [ ] A friendly interface for people who don't code. I have plans for an electron app and a deployed scala server.
