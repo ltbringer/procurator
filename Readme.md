@@ -27,7 +27,7 @@ noun: procurator; plural noun: procurators
 Law: an agent representing others in a court of law in countries retaining Roman civil law.
         (in Scotland) a lawyer practising before the lower courts.
         
-But still, why? because origin of the word **proxy** takes us to a word **procuracy**.
+But why? because origin of the word **proxy** takes us to a word **procuracy**.
 ![word-usage](https://www.gstatic.com/onebox/dictionary/etymology/en/desktop/adc8de134fe7081488d1ecb22f470da58eba3003a0838886073e0882f54caf09.png)
 
 ## Project
@@ -48,11 +48,13 @@ Python: 3.6.5
 4. Start the postgres container.
 5. Enter the container using `docker exec -it <container-id> bash`
 6. In the psql cli Run the following:
-   1. CREATE DATABASE procurator;
-   2. CREATE USER procurator WITH PASSWORD 'procurator';
-   3. ALTER ROLE procurator SET client_encoding to 'utf-8';
-   4. ALTER ROLE procurator SET timezone to 'UTC';
-   5. GRANT ALL PRIVILEGES ON DATABASE procurator TO procurator;
+    ```sql
+    CREATE DATABASE procurator;
+    CREATE USER procurator WITH PASSWORD 'procurator';
+    ALTER ROLE procurator SET client_encoding to 'utf-8';
+    ALTER ROLE procurator SET timezone to 'UTC';
+    GRANT ALL PRIVILEGES ON DATABASE procurator TO procurator;
+    ```
 5. Pull kaldi-serve's docker image. - Optional
     ```
     docker pull vernacularai/kaldi-serve:master
