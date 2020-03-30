@@ -1,7 +1,6 @@
-"""
-******************************************************************************
-Record query and find the best match in a group of sentences.
+"""Record query and find the best match in a group of sentences.
 
+******************************************************************************
 This is the main module of the project, which in turn was created for a
 voice-themed hackathon. There is sub-optimal logic, code that needs refactor
 in this module.
@@ -10,11 +9,12 @@ Usage: __init__.py [--alg=<algorithm>]
 
 Options:
   -h --help          .
-  --alg=<algorithm>  Choose one from ["levenshtein_distance", "jaro_distance",
-                       "damerau_levenshtein_distance"][Default: levenshtein_distance]
+  --alg=<algorithm>  Choose one from ["levenshtein_distance",
+                       "jaro_distance",
+                       "damerau_levenshtein_distance"]
+                       [Default: levenshtein_distance]
 ******************************************************************************
 """
-import os
 import jellyfish
 from docopt import docopt
 from prompt_toolkit import print_formatted_text, HTML, prompt

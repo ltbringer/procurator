@@ -1,5 +1,5 @@
 """
-Setup coloredlogs
+Setup coloredlogs.
 """
 import logging
 import coloredlogs

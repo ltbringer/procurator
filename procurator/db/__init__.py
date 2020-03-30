@@ -1,4 +1,5 @@
-import os
+"""Functions to access database.
+"""
 import psycopg2 as pg
 from procurator.config import DATABASE
 

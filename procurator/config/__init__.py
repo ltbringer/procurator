@@ -1,3 +1,5 @@
+"""Database config setup.
+"""
 import os
 
 
@@ -8,5 +10,3 @@ DATABASE = {
     "dbname": os.environ.get("DB_NAME"),
     "user": os.environ.get("DB_USER")
 }
-
-print(DATABASE)
