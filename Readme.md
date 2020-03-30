@@ -80,10 +80,10 @@ Read about [future plans](#future-works).
     # user, password should be <user>, <password> from step 6
     # If you named your database differently, use that against the argument for --dbname
     ```
- 
-10. Run the cli by using:
+10. Setup the env vars in `env.sh` present at project root and run `source env.sh`.
+11. Run the cli by using:
     ```bash
-    poetry run proxy-bot --dev
+    poetry run proxy-bot
     ```
 
 ## Working
