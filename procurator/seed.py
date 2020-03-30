@@ -16,7 +16,7 @@ from docopt import docopt
 from procurator.utils.logger import L
 
 
-def db_init(fn, host="0.0.0.0", port=5432, password='procurator', user='procurator', dbname='procurator'):
+def db_init(fn, host, port, password, user, dbname):
     conn = pg.connect(host=host, port=port, user=user, password=password, dbname=dbname)
     cursor = conn.cursor()
     fn(cursor)
@@ -46,7 +46,7 @@ def create_answer(cursor):
     L.info("Created seed answers.")
 
 
-RECIPE = [(create_tables), (create_user), (create_answer)]
+RECIPE = [create_tables, create_user, create_answer]
 
 
 def main():
@@ -57,4 +57,4 @@ def main():
     password = arguments["--password"]
     dbname = arguments["--dbname"]
     for recipe in RECIPE:
-        db_init(recipe, host=host, port=port, user=user, password=password, dbname=dbname)
+        db_init(recipe, host, port, user, password, dbname)
