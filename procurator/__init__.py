@@ -6,14 +6,12 @@ This is the main module of the project, which in turn was created for a
 voice-themed hackathon. There is sub-optimal logic, code that needs refactor
 in this module.
 
-Usage: __init__.py [--alg=<algorithm>] (--dev|--prod)
+Usage: __init__.py [--alg=<algorithm>]
 
 Options:
   -h --help          .
   --alg=<algorithm>  Choose one from ["levenshtein_distance", "jaro_distance",
                        "damerau_levenshtein_distance"][Default: levenshtein_distance]
-  --dev              Expects the environment to be a development environment.
-  --prod             Expects the environment to be a production environment.
 ******************************************************************************
 """
 import os
@@ -83,9 +81,6 @@ def knowledge_filter(query, knowledge, alg="levenshtein_distance"):
 def main():
     arguments = docopt(__doc__)
     algorithm = arguments["--alg"]
-    dev = arguments["--dev"]
-    if dev:
-        os.environ["APP_ENV"] = "dev"
     users = get_user_nicks()
     users = [{"id": id, "name": name.strip()} for (id, name) in users]
     usernames = [user["name"] for user in users]
