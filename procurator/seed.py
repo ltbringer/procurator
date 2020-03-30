@@ -1,4 +1,5 @@
-"""Initialize a database ready to be used.
+"""
+Initialize a database ready to be used.
 
 Usage: seed.py --host=<host> --port=<port> --user=<user> --password=<password> --dbname=<dbname>
 

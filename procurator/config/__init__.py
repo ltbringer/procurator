@@ -1,4 +1,5 @@
-"""Database config setup.
+"""
+Database config setup.
 """
 import os
 

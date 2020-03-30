@@ -1,4 +1,5 @@
-"""Record query and find the best match in a group of sentences.
+"""
+Record query and find the best match in a group of sentences.
 
 ******************************************************************************
 This is the main module of the project, which in turn was created for a
