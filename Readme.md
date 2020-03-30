@@ -3,6 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cde256097f2348f39f9a2488bb2ab3dd)](https://www.codacy.com/manual/AmreshVenugopal/procurator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ltbringer/procurator&amp;utm_campaign=Badge_Grade)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![Last commit](https://img.shields.io/github/last-commit/ltbringer/procurator)
+[![Requirements Status](https://requires.io/github/ltbringer/procurator/requirements.svg?branch=master)](https://requires.io/github/ltbringer/procurator/requirements/?branch=master)
 
 Helps people talk to you in your absence.
 
